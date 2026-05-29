@@ -72,7 +72,6 @@ A deployed Streamlit application fetching NASA's Astronomy Picture of the Day vi
 ## 📫 Let's Connect
 
 - 💼 LinkedIn: [linkedin.com/in/mariah-w-3b97b9233](https://www.linkedin.com/in/mariah-w-3b97b9233)
-- 📧 Email: mariahwaslie@gmail.com
 - 📍 Open to relocation — Raleigh-Durham · Boston · Chicago · Minneapolis · Madison · Remote
 - 🎓 Available August 2026
 
