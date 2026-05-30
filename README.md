@@ -8,6 +8,21 @@ That passion came to life during my internship at Royal Credit Union, where I bu
 
 ## 🚀 Featured Projects
 
+### 📖 AI Reading Companion — Live Deployed
+A deployed RAG (Retrieval-Augmented Generation) web app that lets users upload any PDF or EPUB document and ask questions about it. Built with LangChain, ChromaDB, Sentence Transformers, and OpenAI. Every answer is grounded in retrieved document chunks with citations to reduce hallucinations.
+
+🔗 **[Try it live →](https://ai-reading-companion.streamlit.app)**
+
+- 🧠 RAG pipeline with semantic search over document chunks
+- 🔍 Local embeddings via `BAAI/bge-base-en-v1.5` (Sentence Transformers)
+- 🗄️ ChromaDB vector store for similarity search
+- 📄 PDF + EPUB parsing with pypdf, EbookLib, BeautifulSoup
+- ✂️ LangChain RecursiveCharacterTextSplitter for context-aware chunking
+- 🎯 Prompt engineering for grounded answers with chunk citations
+- 🚀 Deployed on Streamlit Community Cloud
+
+---
+
 ### 🌐 Social Media Platform
 A full-stack Django 4.2 platform with real-time WebSocket messaging, TF-IDF recommendation engine, role-based authentication, and API integration — entirely self-directed over one summer.
 
@@ -52,18 +67,18 @@ A deployed Streamlit application fetching NASA's Astronomy Picture of the Day vi
 
 - 🔭 NASA APOD API integration with date-parameterized calls
 - 📰 NASA news scraping with BeautifulSoup and Requests
-  
+
 ---
 
 ## 🛠️ My Tech Stack
 
-**ML & AI**: Python · PyTorch · TensorFlow/Keras · Scikit-learn · XGBoost · LightGBM · HuggingFace · Librosa · MLflow · OpenAI API · NumPy · Pandas
+**ML & AI**: Python · PyTorch · TensorFlow/Keras · Scikit-learn · XGBoost · LightGBM · HuggingFace · Sentence Transformers · LangChain · ChromaDB · RAG · MLflow · OpenAI API · NumPy · Pandas
 
 **Backend**: Django · Django Channels · FastAPI · Flask · Redis · WebSockets · RESTful APIs · SQLAlchemy · Pydantic
 
 **Cloud & DevOps**: AWS (Lambda · S3 · EC2 · Transcribe · Bedrock · CDK) · Azure · Docker · Git · Infrastructure as Code · Azure DevOps
 
-**Databases**: PostgreSQL · Oracle SQL · SQLite · Django ORM · SQLAlchemy ORM
+**Databases**: PostgreSQL · Oracle SQL · SQLite · ChromaDB · Django ORM · SQLAlchemy ORM
 
 **Languages**: Python · Java · SQL · R · C · JavaScript · HTML/CSS
 
