@@ -2,8 +2,6 @@
 
 I like building things that sit at the intersection of data, intelligence, and real impact. I'm a Computer Science & Data Science graduate from the University of Wisconsin–River Falls (August 2026) with a genuine passion for machine learning and software engineering — the kind of work where you take a hard problem, build something that actually solves it, and deploy it somewhere real people use it.
 
-That passion came to life during my internship at Royal Credit Union, where I built and deployed production ML pipelines for member churn prediction and product recommendations — integrating model outputs directly into a production Oracle database.
-
 ---
 
 ## 🚀 Featured Projects
