@@ -1,8 +1,8 @@
 # Hey, I'm Mariah
 
-I'm a Computer Science and Data Science graduate from the University of Wisconsin-River Falls. I work mostly in machine learning and software engineering.
+I'm a Computer Science and Data Science graduate from the University of Wisconsin-River Falls. My work is mostly in machine learning and software engineering.
 
-I've spent much of the past year building [Remmebr](https://remmebr.com), a study platform that started as a personal project and grew into a production application.
+I've spent much of the past year building [Remmebr](https://remmebr.com), a study platform that grew from a personal project into a production application. I also work on applied machine learning projects where the focus is not just training a model, but getting the evaluation and deployment decisions right.
 
 ## 🚀 Selected projects
 
@@ -18,6 +18,26 @@ The stack includes JavaScript, Supabase/PostgreSQL, Vercel, Stripe, StoreKit 2, 
 
 The production repository is private. The application is live at [remmebr.com](https://remmebr.com).
 
+### Loan Default Risk Modeling
+
+An applied machine learning pipeline for predicting LendingClub loan defaults using historical borrower, loan, and credit data.
+
+The modeling dataset contains about 1.27 million loans. I used chronological train, validation, and test splits rather than random splitting so evaluation better matches how a credit-risk model would be used on future loans.
+
+I removed post-origination leakage fields before training, compared several model families, used SHAP to reduce the feature set, calibrated the final CatBoost model with isotonic regression, and selected the classification threshold on the validation set.
+
+Final holdout performance:
+
+- ROC-AUC: 0.7531
+- PR-AUC: 0.3506
+- F1: 0.4020
+- Brier score: 0.1151
+- 95% bootstrap ROC-AUC interval: 0.748 to 0.759
+
+The final artifact packages the calibrated model, selected features, categorical feature list, and decision threshold for inference.
+
+**Stack:** Python, CatBoost, LightGBM, XGBoost, Scikit-learn, SHAP, Optuna, Pandas, NumPy
+
 ### AI Reading Companion
 
 [Try it live](https://ai-reading-companion.streamlit.app)
@@ -28,7 +48,9 @@ Built with Python, LangChain, ChromaDB, Sentence Transformers, OpenAI, pypdf, Eb
 
 ### Serverless Video-to-Quiz Pipeline
 
-An AWS pipeline built with Java CDK. Uploading a video to S3 triggers transcription through AWS Transcribe, sends the transcript to an AWS Bedrock model, generates a structured quiz, and writes the result back to S3.
+An event-driven AWS pipeline built with Java CDK.
+
+Uploading a video to S3 triggers transcription through AWS Transcribe, sends the transcript to an AWS Bedrock model, generates a structured quiz, and writes the result back to S3.
 
 The infrastructure is provisioned in code with Lambda, S3, IAM, Transcribe, Bedrock, and AWS CDK.
 
@@ -40,21 +62,13 @@ I designed the state representation and reward function around throughput, respo
 
 ### Social Media Platform
 
-A Django 4.2 application with real-time messaging through Django Channels, WebSockets, and Redis. It also includes JWT authentication, role-based permissions, privacy controls, an API, and a TF-IDF recommendation system built with Scikit-learn.
+A Django 4.2 application with real-time messaging through Django Channels, WebSockets, and Redis.
 
-### Audio Analysis and Study Guide Generator
-
-A Streamlit application that downloads and processes online video, transcribes the audio with Whisper, and generates structured notes and study material with the OpenAI API.
-
-It uses yt-dlp and FFmpeg for media processing and also supports M3U8 streams and Selenium-based lecture video extraction.
-
-### NASA Space Image and News App
-
-A deployed Streamlit application using NASA's APOD API for date-based astronomy images and BeautifulSoup and Requests for NASA news retrieval.
+It also includes JWT authentication, role-based permissions, privacy controls, an API, and a TF-IDF recommendation system built with Scikit-learn.
 
 ## 🛠 Technical background
 
-**Machine learning:** Python, PyTorch, TensorFlow/Keras, Scikit-learn, XGBoost, LightGBM, Hugging Face, Sentence Transformers, LangChain, RAG, MLflow, NumPy, Pandas
+**Machine learning:** Python, PyTorch, TensorFlow/Keras, Scikit-learn, XGBoost, LightGBM, CatBoost, Hugging Face, Sentence Transformers, SHAP, Optuna, LangChain, RAG, MLflow, NumPy, Pandas
 
 **Backend:** Django, FastAPI, Flask, Redis, WebSockets, REST APIs, SQLAlchemy, Pydantic
 
