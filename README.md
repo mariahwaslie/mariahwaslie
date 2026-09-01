@@ -1,4 +1,4 @@
-# 👋 Hey, I'm Mariah
+# Hey, I'm Mariah
 
 I like building things that sit at the intersection of data, intelligence, and real impact. I'm a Computer Science & Data Science graduate from the University of Wisconsin–River Falls (August 2026) with a genuine passion for machine learning and software engineering — the kind of work where you take a hard problem, build something that actually solves it, and deploy it somewhere real people use it.
 
