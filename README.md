@@ -1,93 +1,73 @@
 # Hey, I'm Mariah
 
-I like building things that sit at the intersection of data, intelligence, and real impact. I'm a Computer Science & Data Science graduate from the University of Wisconsin–River Falls (August 2026) with a genuine passion for machine learning and software engineering — the kind of work where you take a hard problem, build something that actually solves it, and deploy it somewhere real people use it.
+I'm a Computer Science and Data Science graduate from the University of Wisconsin-River Falls. I work mostly in machine learning and software engineering.
 
----
+I've spent much of the past year building [Remmebr](https://remmebr.com), a study platform that started as a personal project and grew into a production application.
 
-## 🚀 Featured Projects
+## 🚀 Selected projects
 
-### 📖 AI Reading Companion — Live Deployed
-A deployed RAG (Retrieval-Augmented Generation) web app that lets users upload any PDF or EPUB document and ask questions about it. Built with LangChain, ChromaDB, Sentence Transformers, and OpenAI. Every answer is grounded in retrieved document chunks with citations to reduce hallucinations.
+### Remmebr
 
-🔗 **[Try it live →](https://ai-reading-companion.streamlit.app)**
+[remmebr.com](https://remmebr.com)
 
-- 🧠 RAG pipeline with semantic search over document chunks
-- 🔍 Local embeddings via `BAAI/bge-base-en-v1.5` (Sentence Transformers)
-- 🗄️ ChromaDB vector store for similarity search
-- 📄 PDF + EPUB parsing with pypdf, EbookLib, BeautifulSoup
-- ✂️ LangChain RecursiveCharacterTextSplitter for context-aware chunking
-- 🎯 Prompt engineering for grounded answers with chunk citations
-- 🚀 Deployed on Streamlit Community Cloud
+Remmebr is a study and learning platform built around spaced repetition, active recall, practice testing, course materials, and AI-assisted learning.
 
----
+I built the application across web, iOS/iPadOS, Android, and desktop PWA. It includes adaptive study planning, document processing, source-grounded AI tools, coursework and assignment features, handwriting support, authentication, subscriptions, cloud storage, and persistent user data.
 
-### 🌐 Social Media Platform
-A full-stack Django 4.2 platform with real-time WebSocket messaging, TF-IDF recommendation engine, role-based authentication, and API integration — entirely self-directed over one summer.
+The stack includes JavaScript, Supabase/PostgreSQL, Vercel, Stripe, StoreKit 2, and AI and document-processing APIs.
 
-- ⚡ Real-time messaging via Django Channels, WebSockets, and Redis
-- 🔐 JWT authentication, role-based groups, privacy controls
-- 🤖 TF-IDF cosine similarity recommendation engine with Scikit-learn
-- 📖 API with database seeding management commands
+The production repository is private. The application is live at [remmebr.com](https://remmebr.com).
 
----
+### AI Reading Companion
 
-### ☁️ Serverless Video-to-Quiz Pipeline
-An event-driven serverless data pipeline on AWS built with Java CDK. A video uploaded to S3 triggers Lambda → AWS Transcribe for speech-to-text → AWS Bedrock LLM generates a structured quiz written back to S3. Zero manual AWS Console setup.
+[Try it live](https://ai-reading-companion.streamlit.app)
 
-- 🏗️ All infrastructure provisioned as code with AWS CDK
-- 🎙️ AWS Transcribe for speech-to-text conversion
-- 🤖 AWS Bedrock LLM for structured quiz generation
-- ☁️ Lambda, S3, IAM — fully serverless architecture
+A RAG application for asking questions about uploaded PDF and EPUB documents. It retrieves relevant passages with semantic search and grounds answers in those passages with citations.
 
----
+Built with Python, LangChain, ChromaDB, Sentence Transformers, OpenAI, pypdf, EbookLib, BeautifulSoup, and Streamlit.
 
-### 🧠 Deep Q-Network OS Scheduler
-A DQN reinforcement learning agent built in PyTorch from scratch to learn optimal CPU scheduling policies for a multi-level feedback queue simulation — benchmarked against FIFO and Round-Robin baselines.
+### Serverless Video-to-Quiz Pipeline
 
-- 🎯 Custom reward function balancing throughput, responsiveness, and starvation
-- 📈 State vector engineered from 10+ system signals
-- ⚖️ Benchmarked against industry-standard scheduling algorithms
+An AWS pipeline built with Java CDK. Uploading a video to S3 triggers transcription through AWS Transcribe, sends the transcript to an AWS Bedrock model, generates a structured quiz, and writes the result back to S3.
 
----
+The infrastructure is provisioned in code with Lambda, S3, IAM, Transcribe, Bedrock, and AWS CDK.
 
-### 🎵 AI Audio Analysis — Whisper Transcription & Study Guide Generator
-A Streamlit app that downloads YouTube audio via yt-dlp, transcribes it using OpenAI Whisper, and generates structured study notes and summaries via the OpenAI Chat API.
+### Deep Q-Network OS Scheduler
 
-- 📥 YouTube audio download and processing via yt-dlp and FFmpeg
-- 🎙️ OpenAI Whisper API for audio transcription
-- 📝 OpenAI Chat API for structured study note generation
-- 🔧 Handles M3U8 streams and Selenium-based lecture video extraction
+A PyTorch reinforcement learning project for CPU scheduling in a multi-level feedback queue simulation.
 
----
+I designed the state representation and reward function around throughput, responsiveness, and starvation, then compared the learned policy with FIFO and Round-Robin schedulers.
 
-### 🌌 NASA Space Image & News App — Live Deployed
-A deployed Streamlit application fetching NASA's Astronomy Picture of the Day via the NASA APOD API with date selection, and scraping NASA news articles using BeautifulSoup.
+### Social Media Platform
 
-- 🔭 NASA APOD API integration with date-parameterized calls
-- 📰 NASA news scraping with BeautifulSoup and Requests
+A Django 4.2 application with real-time messaging through Django Channels, WebSockets, and Redis. It also includes JWT authentication, role-based permissions, privacy controls, an API, and a TF-IDF recommendation system built with Scikit-learn.
 
----
+### Audio Analysis and Study Guide Generator
 
-## 🛠️ My Tech Stack
+A Streamlit application that downloads and processes online video, transcribes the audio with Whisper, and generates structured notes and study material with the OpenAI API.
 
-**ML & AI**: Python · PyTorch · TensorFlow/Keras · Scikit-learn · XGBoost · LightGBM · HuggingFace · Sentence Transformers · LangChain · ChromaDB · RAG · MLflow · OpenAI API · NumPy · Pandas
+It uses yt-dlp and FFmpeg for media processing and also supports M3U8 streams and Selenium-based lecture video extraction.
 
-**Backend**: Django · Django Channels · FastAPI · Flask · Redis · WebSockets · RESTful APIs · SQLAlchemy · Pydantic
+### NASA Space Image and News App
 
-**Cloud & DevOps**: AWS (Lambda · S3 · EC2 · Transcribe · Bedrock · CDK) · Azure · Docker · Git · Infrastructure as Code · Azure DevOps
+A deployed Streamlit application using NASA's APOD API for date-based astronomy images and BeautifulSoup and Requests for NASA news retrieval.
 
-**Databases**: PostgreSQL · Oracle SQL · SQLite · ChromaDB · Django ORM · SQLAlchemy ORM
+## 🛠 Technical background
 
-**Languages**: Python · Java · SQL · R · C · JavaScript · HTML/CSS
+**Machine learning:** Python, PyTorch, TensorFlow/Keras, Scikit-learn, XGBoost, LightGBM, Hugging Face, Sentence Transformers, LangChain, RAG, MLflow, NumPy, Pandas
 
----
+**Backend:** Django, FastAPI, Flask, Redis, WebSockets, REST APIs, SQLAlchemy, Pydantic
 
-## 📫 Let's Connect
+**Cloud and infrastructure:** AWS, Azure, Vercel, Docker, Git, AWS CDK, Infrastructure as Code, Azure DevOps
 
-- 💼 LinkedIn: [linkedin.com/in/mariahwaslie](https://www.linkedin.com/in/mariahwaslie)
-- 📍 Open to relocation 
-- 🎓 Available August 2026
+**Data:** PostgreSQL, Oracle SQL, SQLite, ChromaDB, Supabase
 
----
+**Languages:** Python, Java, SQL, R, C, JavaScript, HTML/CSS
 
-*Open to MLE, backend SWE, and data engineering roles. If something in my work looks interesting to you, feel free to reach out.*
+## 📫 Contact
+
+[LinkedIn](https://www.linkedin.com/in/mariahwaslie)
+
+B.S. Computer Science and Data Science, University of Wisconsin-River Falls, August 2026
+
+Open to relocation and interested in machine learning engineering, backend software engineering, and related roles.
