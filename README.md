@@ -2,9 +2,7 @@
 
 I’m a Computer Science and Data Science graduate from the University of Wisconsin–River Falls, with a focus on machine learning, data science, and software engineering.
 
-I build end-to-end applications and applied machine learning projects, from data preparation and model development to backend systems, APIs, evaluation, and deployment. My work spans Python, Java, SQL, cloud tools, and modern ML frameworks, with an emphasis on building systems that are practical, reliable, and usable beyond a notebook.
-
-I’m especially interested in roles where I can combine software engineering with data and machine learning to solve real-world problems.
+I build end-to-end applications and applied machine learning projects, from data preparation and model development to backend systems, APIs, evaluation, and deployment. My work spans Python, Java, SQL, cloud tools, and modern ML frameworks, with an emphasis on building systems that are practical, reliable, and usable.
 
 ## 🚀 Selected projects
 
