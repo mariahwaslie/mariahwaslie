@@ -1,8 +1,10 @@
 # Hey, I'm Mariah
 
-I'm a Computer Science and Data Science graduate from the University of Wisconsin-River Falls. My work is mostly in machine learning and software engineering.
+I’m a Computer Science and Data Science graduate from the University of Wisconsin–River Falls, with a focus on machine learning, data science, and software engineering.
 
-I've spent much of the past year building [Remmebr](https://remmebr.com), a study platform that grew from a personal project into a production application. I also work on applied machine learning projects where the focus is not just training a model, but getting the evaluation and deployment decisions right.
+I build end-to-end applications and applied machine learning projects, from data preparation and model development to backend systems, APIs, evaluation, and deployment. My work spans Python, Java, SQL, cloud tools, and modern ML frameworks, with an emphasis on building systems that are practical, reliable, and usable beyond a notebook.
+
+I’m especially interested in roles where I can combine software engineering with data and machine learning to solve real-world problems.
 
 ## 🚀 Selected projects
 
